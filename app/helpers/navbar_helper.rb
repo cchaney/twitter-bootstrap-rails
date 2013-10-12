@@ -142,7 +142,7 @@ module NavbarHelper
   end
 
   def responsive_button
-    %{<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+    %{<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
@@ -150,7 +150,7 @@ module NavbarHelper
   end
 
   def responsive_div(&block)
-    content_tag(:div, :class => "nav-collapse collapse", &block)
+    content_tag(:div, :class => "navbar-collapse collapse", &block)
   end
 
   def is_active?(path, options={})
